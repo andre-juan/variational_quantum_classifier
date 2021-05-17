@@ -20,7 +20,7 @@ If we draw this analogy, one could say that VQC is a neural network whose forwar
 
 Now, all gates performed in a quantum circuit are **linear, unitary operators**. Although there are some proposals of implementing non-liniearities in quantum circuits (see, for example [this paper](https://arxiv.org/abs/1806.06871), or [this one](https://arxiv.org/abs/1808.10047) which deals with photonic quantum computing), which would indeed reproduce all major ingredients of a classical neural network (included non-linear activation functions) to be implemented in a quantum computer, this is not a trivial task to be implemented on general architectures. And this is not what we will implement in this notebook. Thus, I prefer to avoid the "quantum neural network" denomination, as I think it can be a bit misleading, specitally if taken out of context.
 
-For more details on VQC, and a more formal and illustrated version of the description above, please see [this notebook!]().
+For more details on VQC, and a more formal and illustrated version of the description above, please see [this notebook!](https://github.com/andre-juan/variational_quantum_classifier/blob/main/vqc_iris_fundamentals.ipynb)
 
 In this repository, we build simple implementations of VQC with the main goal of understanding what the model is actually doing. Thus, iven its simplicity, its performance probably won't be that great, and that's indeed not the primary goal here. Fot better performing models, I suggest [Qiskit's](https://qiskit.org/documentation/tutorials/machine_learning/03_vqc.html) or [PennyLane's](https://pennylane.ai/qml/demos/tutorial_variational_classifier.html) implementations of variational quantum classifiers. In these implementations, you find not only more flexibility on the model architecture, but also different (and potentially better) ways to perform the optimization (learning) procedure.
 
@@ -32,4 +32,4 @@ This repository contains the following files:
 - `vqc_iris_fundamentals.ipynb`: Notebook with a step-by-step implementation of the VQC algorithm, as well as markdown cells containing detailed explanations of each step. The algorithm is trained in the iris dataset.
 - `vqc.py`: Python file with all functions of the implementation of VQC. This file contains generalized versions of the functions constructed in the notebook above, which allows more flexibility in the experimentation of different architectures and hyperparameters for the model construction. This is done in the notebook below.
 - `vqc_iris_experiments.ipynb`: Notebook with a grid-search like experimentation of different model architectures and hyperparameters, using the functions defined in the python file above.
-- `iris.csv` : csv file with the [iris dataset.](https://archive.ics.uci.edu/ml/datasets/iris)
+- `iris.csv`: csv file with the [iris dataset.](https://archive.ics.uci.edu/ml/datasets/iris)

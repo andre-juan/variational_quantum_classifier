@@ -32,4 +32,4 @@ This repository contains the following files:
 - `vqc_iris_fundamentals.ipynb`: Notebook with a step-by-step implementation of the VQC algorithm, as well as markdown cells containing detailed explanations of each step. The algorithm is trained in the iris dataset.
 - `vqc.py`: Python file with all functions of the implementation of VQC. This file contains generalized versions of the functions constructed in the notebook above, which allows more flexibility in the experimentation of different architectures and hyperparameters for the model construction. This is done in the notebook below.
 - `vqc_iris_experiments.ipynb`: Notebook with a grid-search like experimentation of different model architectures and hyperparameters, using the functions defined in the python file above.
-- `iris.csv` : csv file with the [iris dataset.](https://archive.ics.uci.edu/ml/datasets/iris)
+- `iris.csv`: csv file with the [iris dataset.](https://archive.ics.uci.edu/ml/datasets/iris)
